@@ -1,0 +1,24 @@
+{
+  "name": "chatxbt",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vocs dev",
+    "build": "vocs build",
+    "preview": "vocs preview"
+  },
+  "dependencies": {
+    "@types/react": "latest",
+    "parse": "^5.0.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "rehype-katex": "^7.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "typescript": "latest",
+    "vite-plugin-radar": "^0.9.3",
+    "vocs": "latest"
+  }
+}

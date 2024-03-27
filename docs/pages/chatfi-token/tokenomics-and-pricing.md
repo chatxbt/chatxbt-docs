@@ -1,0 +1,41 @@
+---
+description: >-
+  Please note that this is a draft and may require further refinement based on
+  legal, regulatory, and market considerations.
+---
+
+# Tokenomics and pricing
+
+**Token Distribution:**
+
+1. **Token Maximum Supply:** 10 billion ChatFI tokens.
+2. **Seed Round Investors:** 15% of total supply (1.5 billion tokens) allocated with a vesting schedule of 12 months, vested monthly.
+3. **Core Contributors:** 10% of total supply (1 billion tokens) allocated with a vesting schedule of 24 months, vested quarterly.
+4. **Team:** 15% of total supply (1.5 billion tokens) allocated with a vesting schedule of 36 months, vested quarterly.
+5. **Community Fund:** 30% of total supply (2 billion tokens) allocated to fund community-driven initiatives, ecosystem development, and partnerships.
+6. **Development Fund:** 20% of total supply (2 billion tokens) allocated for ongoing development, research, and innovation.
+7. **Exchange Liquidity Quota:** 5% of total supply (500 million tokens) allocated for providing liquidity on exchanges for trading pairs.
+8. **Reserve:** 5% of total supply (500 million tokens) held in reserve for future strategic initiatives, partnerships, and ecosystem growth.
+
+**Token Vesting Schedule:**
+
+* Seed Round Investors: 12-month vesting, vested monthly.
+* Core Contributors: 24-month vesting, vested quarterly.
+* Team: 36-month vesting, vested quarterly.
+
+**Token Utilization:**
+
+1. **Seed Round Investors:** To secure initial funding and support early-stage development.
+2. **Core Contributors:** Rewarding long-term commitment and incentivizing continued contributions to the project.
+3. **Team:** Aligning the team's interests with the long-term success of the project while ensuring retention.
+4. **Community Fund:** Stimulating community engagement, supporting ecosystem growth, and fostering partnerships.
+5. **Development Fund:** Financing ongoing development efforts, research initiatives, and innovation within the project.
+6. **Exchange Liquidity Quota:** Ensuring sufficient liquidity for trading on exchanges, facilitating market stability and accessibility.
+7. **Reserve:** Reserved for future strategic initiatives, partnerships, and unforeseen opportunities to support project growth.
+
+**Tokenomics Summary:**
+
+* The tokenomics aim to strike a balance between incentivizing early contributors, ensuring long-term sustainability, and fostering community growth.
+* The vesting schedules are designed to align incentives, prevent token dumping, and promote commitment to the project's long-term success.
+* Allocation percentages are based on industry standards and best practices, with a focus on maintaining a healthy ecosystem and supporting ongoing development and liquidity.
+
