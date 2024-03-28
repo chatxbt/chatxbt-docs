@@ -4,7 +4,7 @@ import rehypeStringify from "rehype-stringify";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
-import { VitePluginRadar } from "vite-plugin-radar";
+// import { VitePluginRadar } from "vite-plugin-radar";
 
 export default defineConfig({
   title: "Chatxbt Protocol",
@@ -34,14 +34,14 @@ export default defineConfig({
         allow: [".."],
       },
     },
-    plugins: [
-      VitePluginRadar({
-        // Google Analytics tag injection
-        analytics: {
-          //   // id: process.env.GA_ID!,
-        },
-      }),
-    ],
+    // plugins: [
+    //   VitePluginRadar({
+    //     // Google Analytics tag injection
+    //     analytics: {
+    //       //   // id: process.env.GA_ID!,
+    //     },
+    //   }),
+    // ],
   },
   rootDir: ".",
   markdown: {
