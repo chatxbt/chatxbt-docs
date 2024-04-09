@@ -11,7 +11,7 @@ export default defineConfig({
     "ChatXBT protocol enables you to interact with any DeFi protocol or chain and execute commands by chat. Buy, sell, lend, borrow, stake, bridge, research a crypto by sending a chat.",
   ogImageUrl:
     "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
-  // logoUrl: "/logo-alt.png",
+  // logoUrl: "/logo-alt.png",np
   iconUrl: "/favicon.ico",
   socials: [
     {
