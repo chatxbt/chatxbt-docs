@@ -1,9 +1,11 @@
+import "dotenv/config";
 import { defineConfig } from "vocs";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import { VitePluginRadar } from "vite-plugin-radar";
 
 export default defineConfig({
   title: "Chatxbt Protocol",
@@ -11,7 +13,7 @@ export default defineConfig({
     "ChatXBT protocol enables you to interact with any DeFi protocol or chain and execute commands by chat. Buy, sell, lend, borrow, stake, bridge, research a crypto by sending a chat.",
   ogImageUrl:
     "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
-  // logoUrl: "/logo-alt.png",np
+  // logoUrl: "/logo-alt.png",
   iconUrl: "/favicon.ico",
   socials: [
     {
@@ -28,21 +30,21 @@ export default defineConfig({
       link: "https://t.me/chatxbt",
     },
   ],
-  // vite: {
-  //   server: {
-  //     fs: {
-  //       allow: [".."],
-  //     },
-  //   },
-  // plugins: [
-  //   VitePluginRadar({
-  //     // Google Analytics tag injection
-  //     analytics: {
-  //       //   // id: process.env.GA_ID!,
-  //     },
-  //   }),
-  // ],
-  // },
+  vite: {
+    server: {
+      fs: {
+        allow: [".."],
+      },
+    },
+    plugins: [
+      VitePluginRadar({
+        // Google Analytics tag injection
+        analytics: {
+          id: process.env.GA_ID!,
+        },
+      }),
+    ],
+  },
   // rootDir: ".",
   markdown: {
     remarkPlugins: [

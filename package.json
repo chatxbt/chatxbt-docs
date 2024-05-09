@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vocs dev",
+    "dev": "vocs dev --host",
     "build": "vocs build",
     "preview": "vocs preview"
   },
   "dependencies": {
     "@types/react": "latest",
+    "dotenv": "^16.4.5",
     "parse": "^5.0.0",
     "react": "latest",
     "react-dom": "latest",
@@ -18,7 +19,9 @@
     "remark-math": "^6.0.0",
     "remark-parse": "^11.0.0",
     "typescript": "latest",
-    "vite-plugin-radar": "^0.9.3",
     "vocs": "latest"
+  },
+  "devDependencies": {
+    "vite-plugin-radar": "^0.9.3"
   }
 }
