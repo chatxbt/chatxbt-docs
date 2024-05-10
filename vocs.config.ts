@@ -103,7 +103,7 @@ export default defineConfig({
     },
 
     {
-      text: "Developer Docs",
+      text: "Developer Guide",
       collapsed: true,
       items: [
         {
