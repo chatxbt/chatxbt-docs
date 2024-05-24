@@ -45,6 +45,7 @@ export default defineConfig({
         },
       }),
     ],
+    base: "/",
   },
   markdown: {
     remarkPlugins: [
