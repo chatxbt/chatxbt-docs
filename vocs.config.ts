@@ -45,6 +45,13 @@ export default defineConfig({
         },
       }),
     ],
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
     base: "/",
   },
   markdown: {
