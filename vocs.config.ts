@@ -15,6 +15,7 @@ export default defineConfig({
     "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
   // logoUrl: "/logo-alt.png",
   iconUrl: "/favicon.ico",
+  // rootDir: "./",
   socials: [
     {
       icon: "github",
@@ -45,7 +46,6 @@ export default defineConfig({
       }),
     ],
   },
-  // rootDir: ".",
   markdown: {
     remarkPlugins: [
       remarkParse,
@@ -66,7 +66,7 @@ export default defineConfig({
       items: [
         {
           text: "Introduction",
-          link: "/introduction/overview",
+          link: "/introduction/intro",
         },
         {
           text: "Intersection AI and DeFi",
