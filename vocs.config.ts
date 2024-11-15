@@ -6,6 +6,41 @@ import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { VitePluginRadar } from "vite-plugin-radar";
+import generateSitemap, { UserOptions } from "sitemap-ts";
+import { glob } from "glob";
+
+function Sitemap(options: UserOptions = {}) {
+  return {
+    name: "vite-plugin-sitemap",
+    async closeBundle() {
+      const paths = (
+        await glob("./**/*.mdx", { ignore: "node_modules/**" })
+      ).map((f) => {
+        f = f.replace("/index.mdx", "");
+        f = f.replace(".mdx", "");
+        f = f.replace("pages", "");
+
+        return f;
+      });
+      options.dynamicRoutes = paths;
+      generateSitemap(options);
+    },
+    transformIndexHtml() {
+      return [
+        {
+          tag: "link",
+          injectTo: "head",
+          attrs: {
+            rel: "sitemap",
+            type: "application/xml",
+            title: "Sitemap",
+            href: "/sitemap.xml",
+          },
+        },
+      ];
+    },
+  };
+}
 
 export default defineConfig({
   title: "Chatxbt Protocol",
@@ -41,14 +76,25 @@ export default defineConfig({
       VitePluginRadar({
         // Google Analytics tag injection
         analytics: {
-          id: process.env.GA_ID!,
+          id: process.env.GA_ID! || "default-ga-id",
         },
       }),
+      Sitemap({
+        hostname: "https://docs.chatxbt.com",
+      }) as any,
     ],
     build: {
       rollupOptions: {
         output: {
-          manualChunks: undefined,
+          manualChunks: {
+            vendor: ["react", "react-dom"],
+          },
+        },
+      },
+      minify: "terser",
+      terserOptions: {
+        compress: {
+          drop_console: true,
         },
       },
     },

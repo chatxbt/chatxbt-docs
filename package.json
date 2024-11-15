@@ -10,6 +10,7 @@
   "dependencies": {
     "@types/react": "latest",
     "dotenv": "^16.4.5",
+    "glob": "^11.0.0",
     "parse": "^5.0.0",
     "react": "latest",
     "react-dom": "latest",
@@ -18,6 +19,7 @@
     "remark": "^15.0.1",
     "remark-math": "^6.0.0",
     "remark-parse": "^11.0.0",
+    "sitemap-ts": "^1.8.0",
     "typescript": "latest",
     "vocs": "latest"
   },
