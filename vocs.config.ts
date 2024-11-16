@@ -44,12 +44,17 @@ function Sitemap(options: UserOptions = {}) {
 
 export default defineConfig({
   title: "Chatxbt Protocol",
-  description:
-    "ChatXBT protocol enables you to interact with any DeFi protocol or chain and execute commands by chat. Buy, sell, lend, borrow, stake, bridge, research a crypto by sending a chat.",
+  description: "ChatXBT is building the foundation for a more accessible Web3",
   ogImageUrl:
     "https://vocs.dev/api/og?logo=%logo&title=%title&description=%description",
   // logoUrl: "/logo-alt.png",
   iconUrl: "/favicon.ico",
+  baseUrl: "https://docs.chatxbt.network",
+  editLink: {
+    pattern:
+      "https://github.com/chatxbt/chatxbt-docs/tree/master/docs/pages/:path",
+    text: "Suggest changes to this page",
+  },
   // rootDir: "./",
   socials: [
     {
@@ -86,15 +91,7 @@ export default defineConfig({
     build: {
       rollupOptions: {
         output: {
-          manualChunks: {
-            vendor: ["react", "react-dom"],
-          },
-        },
-      },
-      minify: "terser",
-      terserOptions: {
-        compress: {
-          drop_console: true,
+          manualChunks: undefined,
         },
       },
     },
